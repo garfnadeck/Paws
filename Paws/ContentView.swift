@@ -59,7 +59,7 @@ struct ContentView: View {
                                     Menu{
                                         Button("Delete", systemImage: "trash", role: .destructive){
                                             withAnimation{
-                                                ModelContext.delete(pet)
+                                                modelContext.delete(pet)
                                                 try? modelContext.save()
                                             }
                                         }
